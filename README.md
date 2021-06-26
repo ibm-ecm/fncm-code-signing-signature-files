@@ -1,7 +1,7 @@
 # fncm-code-signing-signature-files
 ## IBM FileNet Content Manager Code Signing Signature, Public Keys, and Public Certificates
 
-This repository contains signature files, public keys, and public certificates required to verify signed binaries for IBM FileNet Content Manager and IBM Content Foundation products. The signature files can be used verify that your downloaded binaries match the files that were built and released by IBM and have not been tampered with or modified. Note that signature files for Windows binaries (such as executables) and for zip files are embedded in those files. The files contained on this repository are only required for validating AIX, Linux, and zLinux binaries, as the signature files for those binaries are separate.
+This repository contains signature files, public keys, and public certificates required to verify signed binaries for IBM FileNet Content Manager and IBM Content Foundation products. The signature files can be used to verify that your downloaded binaries match the files that were built and released by IBM and have not been tampered with or modified. Note that signature files for Windows binaries (such as executables) and for zip files are embedded in those files. The files contained on this repository are only required for validating AIX, Linux, and zLinux binaries, as the signature files for those binaries are separate.
 
 To verify your downloaded binaries, follow the instructions below.
 
@@ -9,12 +9,14 @@ To verify your downloaded binaries, follow the instructions below.
 ### Verifying AIX, Linux, and zLinux Binaries
 
 The signature files for AIX, Linux, and zLinux binaries can be found in this repository under the component and version directory structure. You will also find any files needed to verify the authenticity of the signature files in this repository. Signature files are either given similar names to the original file with a .sig suffix or a name matching the part number of the original file with a .sig suffix. Public keys and public certificates are generally given a .pem suffix. Under each version folder can be one of several folders with additional files:
+- cpetools - Signature files for the executable binary files for Content Platform Engine tools
 - docker-image - Signature file for the tgz package containing the Docker image. Note that the image inside of the package is also signed, though the signature for the image is embedded inside of the image itself.
+- installers - Signature files for the executable installer files
 - keys-certificates - Contains the following files that can be used to validate that a signature file is valid:
   - certificate.pem - The public certificate used to generate the signature file
   - intermediate.pem - the public intermediary certificate (outside this repository the certificate might be named chain0.pem)
   - publickey.pem - The public key for validating the signature
-- media - Signature files for the installation media package, in which the installers and other files related to the component can be found (usally tar.gz or tgz files)
+- media - Signature files for the installation media package, in which the installers and other files related to the component can be found
 
 You can verify the file using the signature and public key files with the OpenSSL command.
 
@@ -109,9 +111,9 @@ If the signature for the zip file is not valid, verify that you are using the co
 ---
 ### Verifying Windows Binaries
 
-To verify a Windows binary, such as an executable file, right click on the artifact, click Properties/Digital signatures, and you should see the IBM code signing certificates. You can inspect the IBM code signing certificates to make sure that they are valid and have not expired. If the file has no Digital Signatures Tab under Properties, it means that it is unsigned.
+To verify a Windows binary, such as an executable file, right click on the artifact, click Properties/Digital signatures, and you should see the IBM code signing certificates. You can inspect the IBM code signing certificates to make sure that they are valid. If the file has no Digital Signatures Tab under Properties, it means that it is unsigned.
 
 ---
 ### Expiration of signature files, public keys, and certificates
 
-The IBM certificates used to sign a file generally have a lifespan of about three years. If you are concerned about the validity of your artifacts after the certificate used to sign the artifact has expired, you may contact IBM support to request newly generated signature files, public keys, public certificates, or installation media.
+The IBM certificates used to sign a file generally have a lifespan of a few years, but the timestamp of the signature has a much longer lifespan (around a decade). Even if the certificate expires, the signature is still valid as long as the timestamp has not expired.
