@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [5.5.8.0] - 2021-12-17
+
+### Added
+- Added signature files, public keys, and public certificates for the following releases:
+  - [CPE 5.5.8](CPE/5.5.8)
+  - [CSS 5.5.8](CSS/5.5.8)
+  - [External Share 3.0.11](ExternalShare/3.0.11)
+  - [GraphQL 5.5.8](GraphQL/5.5.8)
+  - [ICN 3.0.11](ICN/3.0.11)
+  - [FNCM Operator 5.5.8](Operator/5.5.8)
+  - [Task Manager 3.0.11](TaskManager/3.0.11)
+
+### Changed
+- Updated [LICENSE](LICENSE) for the 5.5.8 release. 
+
+
 ## [5.5.7.0] - 2021-06-25
 
 ### Added
@@ -20,6 +36,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Updated [README.md](README.md) to correct the section on **Expiration of signature files, public keys, and certificates**. Also, updated the section **Verifying AIX, Linux, and zLinux Binaries**, adding additional folders that are new for the 5.5.7 release. 
+- Updated [LICENSE](LICENSE) for the 5.5.7 release. 
 
 
 ## [5.5.6.0] - 2019-12-18
