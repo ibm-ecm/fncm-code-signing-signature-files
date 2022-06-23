@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [5.5.9.0] - 2021-06-24
+
+### Added
+- Added signature files, public keys, and public certificates for the following releases:
+  - [CPE 5.5.9](CPE/5.5.9)
+  - [CSS 5.5.9](CSS/5.5.9)
+  - [ICN 3.0.12](ICN/3.0.12)
+- Note that containers images going forward will only be available via the IBM Entitlement Registry, where the images are signed via a different process.  Since the container images are no longer included on Passport Advantage, the signature files for the container image parts from Passport Advantage will no longer be included for new releases in this repository.
+
+### Changed
+- Updated [LICENSE](LICENSE) for the 5.5.9 release. 
+
+
 ## [5.5.8.0] - 2021-12-17
 
 ### Added
@@ -54,6 +67,8 @@ All notable changes to this project will be documented in this file.
   - [Task Manager 3.0.9](TaskManager/3.0.9)
 
 
-[unreleased]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/compare/v5.5.7.0...HEAD
+[unreleased]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/compare/v5.5.9.0...HEAD
+[5.5.9.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.9.0
+[5.5.8.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.8.0
 [5.5.7.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.7.0
 [5.5.6.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.6.0
