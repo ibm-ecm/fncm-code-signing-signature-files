@@ -5,7 +5,20 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
-## [5.5.9.0] - 2021-06-24
+## [5.5.10.0] - 2021-12-16
+
+### Added
+- Added signature files, public keys, and public certificates for the following releases:
+  - [CMIS 3.0.7](CMIS/3.0.7)
+  - [CPE 5.5.10](CPE/5.5.10)
+  - [CSS 5.5.10](CSS/5.5.10)
+  - [ICN 3.0.13](ICN/3.0.13)
+
+### Changed
+- Updated [LICENSE](LICENSE) for the 5.5.10 release. 
+
+
+## [5.5.9.0] - 2022-06-24
 
 ### Added
 - Added signature files, public keys, and public certificates for the following releases:
