@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [5.5.12.0] - 2023-12-15
+
+### Added
+- Added signature files, public keys, and public certificates for the following releases:
+  - [CPE 5.5.12](CPE/5.5.12)
+  - [CSS 5.5.12](CSS/5.5.12)
+  - [ICN 3.0.15](ICN/3.0.15)
+
+### Changed
+- Updated [LICENSE](LICENSE) for the 5.5.12 release. 
+
+
 ## [5.5.11.0] - 2023-06-23
 
 ### Added
@@ -92,7 +104,9 @@ All notable changes to this project will be documented in this file.
   - [Task Manager 3.0.9](TaskManager/3.0.9)
 
 
-[unreleased]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/compare/v5.5.10.0...HEAD
+[unreleased]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/compare/v5.5.12.0...HEAD
+[5.5.12.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.12.0
+[5.5.11.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.11.0
 [5.5.10.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.10.0
 [5.5.9.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.9.0
 [5.5.8.0]: https://github.com/ibm-ecm/fncm-code-signing-signature-files/releases/tag/v5.5.8.0
