@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
-## [5.6.0.0] - 2024-06-21
+## [5.6.0.0] - 2024-06-28
 
 ### Added
 - Added signature files, public keys, and public certificates for the following releases:
